@@ -7,7 +7,6 @@ function helloPage() {
         if (!isGameStarted) {
             document.getElementById("hello-page").style.display = "none";
             start();
-            console.log("men chert")
             isGameStarted = !isGameStarted;
         }
         }
@@ -30,7 +29,7 @@ function start() {
     let second = 0;
     let levels = 1;
 
-    let range = 150;
+    let range = 100;
 
     document.getElementById("score").innerHTML = "00";
     document.getElementById("minute").innerHTML = "00";
@@ -181,12 +180,12 @@ function start() {
         second++;
         if(second === 14 && minute === 0){
             levels = 2;
-            document.getElementById("level").innerHTML = "Level: 2";
-            range = 300;
+            //document.getElementById("level").innerHTML = "Level: 2";
+            //range = 100;
         }else if(second === 35 && minute === 0) {
             levels = 3;
-            document.getElementById("level").innerHTML = "Level: 3";
-            range = 200;
+            // document.getElementById("level").innerHTML = "Level: 3";
+            //range = 100;
         }
     }, 1000);
 
